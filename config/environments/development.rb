@@ -1,4 +1,10 @@
 Rails.application.configure do
+  
+  # Add Cloud9 origin for Action Cable requests.
+  config.action_cable.allowed_request_origins = [
+    'https://action-cable-denislp1.c9users.io' ]
+    
+    
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
